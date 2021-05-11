@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bytedeco:javacpp-platform:1.5.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp-platform/1.5.5/ce1aae20dac967f042cd30d78e61c55af8477852/javacpp-platform-1.5.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp-platform/1.5.5/139ca078c42a8db0d3be1a4b90c7b0b6e99cbc9d/javacpp-platform-1.5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

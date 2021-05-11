@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bytedeco:flandmark-platform:1.07-1.5.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/flandmark-platform/1.07-1.5.5/d905d1a031b875d465c6022eb7593e52e8145f27/flandmark-platform-1.07-1.5.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/flandmark-platform/1.07-1.5.5/8e014efb92c0c2de50bb794c60aac58af9267e2b/flandmark-platform-1.07-1.5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

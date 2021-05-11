@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bytedeco:ffmpeg:android-arm64:4.3.2-1.5.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/ffmpeg/4.3.2-1.5.5/9797250cde9d2a04e134a08cc87c7defaebfb91f/ffmpeg-4.3.2-1.5.5-android-arm64.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/ffmpeg/4.3.2-1.5.5/9aac472b07ccae7fb47899161d70a9842ddb2921/ffmpeg-4.3.2-1.5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

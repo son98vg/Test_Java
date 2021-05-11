@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bytedeco:libdc1394:windows-x86_64:2.2.6-1.5.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/libdc1394/2.2.6-1.5.5/eb21aba9e128bf45cfb6e1ea138aec58e2932a7f/libdc1394-2.2.6-1.5.5-windows-x86_64.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/libdc1394/2.2.6-1.5.5/7a8f83e427ecb83c75bc1429c2226091b5ea101/libdc1394-2.2.6-1.5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

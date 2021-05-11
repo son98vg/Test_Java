@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bytedeco:opencv:linux-armhf:4.5.1-1.5.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/opencv/4.5.1-1.5.5/d938362aa23446abe36a3e274816f42601467a4f/opencv-4.5.1-1.5.5-linux-armhf.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/opencv/4.5.1-1.5.5/edf951dc2cf6db9a84a6e67f1d83521804f55acf/opencv-4.5.1-1.5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
