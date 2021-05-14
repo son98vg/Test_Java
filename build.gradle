@@ -32,6 +32,11 @@ dependencies {
     testImplementation "io.grpc:grpc-testing:${grpcVersion}"
     testImplementation "junit:junit:4.12"
     testImplementation "org.mockito:mockito-core:3.4.0"
+    /// MongoDB Driver Sync
+//    compile 'org.mongodb:mongodb-driver-sync:4.2.3'
+    /// MongdoDB Driver
+    compile 'org.mongodb:mongodb-driver:3.4.3'
+
 
 }
 

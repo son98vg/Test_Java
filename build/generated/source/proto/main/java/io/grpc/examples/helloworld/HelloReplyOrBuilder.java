@@ -18,4 +18,16 @@ public interface HelloReplyOrBuilder extends
    */
   com.google.protobuf.ByteString
       getMessageBytes();
+
+  /**
+   * <code>string pass = 2;</code>
+   * @return The pass.
+   */
+  java.lang.String getPass();
+  /**
+   * <code>string pass = 2;</code>
+   * @return The bytes for pass.
+   */
+  com.google.protobuf.ByteString
+      getPassBytes();
 }

@@ -50,9 +50,10 @@ public  class rtspCapture extends Thread {
                 if ((frame = streamGrabber.grabImage()) !=null) {
                     BufferedImage bufferImage = Java2DFrameUtils.toBufferedImage(frame);
                     //                        opencv_core.Mat mat = convToMat.convert(frame);
-                    System.out.println("bufferImage ----" + bufferImage);
+//                    System.out.println("bufferImage ----" + bufferImage);
+                    System.out.println(frame.getTypes());
                     File outputfile = new File("/media/minhhoang/Data/son/test.jpg");
-                    ImageIO.write(bufferImage, "jpg", outputfile);
+//                    ImageIO.write(bufferImage, "jpg", outputfile);
 
                 }
             } catch (IOException e) {

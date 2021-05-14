@@ -21,6 +21,7 @@ private static final long serialVersionUID = 0L;
   }
   private HelloRequest() {
     name_ = "";
+    pass_ = "";
   }
 
   @java.lang.Override
@@ -57,6 +58,12 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             name_ = s;
+            break;
+          }
+          case 18: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            pass_ = s;
             break;
           }
           default: {
@@ -129,6 +136,44 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int PASS_FIELD_NUMBER = 2;
+  private volatile java.lang.Object pass_;
+  /**
+   * <code>string pass = 2;</code>
+   * @return The pass.
+   */
+  @java.lang.Override
+  public java.lang.String getPass() {
+    java.lang.Object ref = pass_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      pass_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string pass = 2;</code>
+   * @return The bytes for pass.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getPassBytes() {
+    java.lang.Object ref = pass_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      pass_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -146,6 +191,9 @@ private static final long serialVersionUID = 0L;
     if (!getNameBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
     }
+    if (!getPassBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, pass_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -157,6 +205,9 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (!getNameBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+    }
+    if (!getPassBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, pass_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -175,6 +226,8 @@ private static final long serialVersionUID = 0L;
 
     if (!getName()
         .equals(other.getName())) return false;
+    if (!getPass()
+        .equals(other.getPass())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -188,6 +241,8 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
+    hash = (37 * hash) + PASS_FIELD_NUMBER;
+    hash = (53 * hash) + getPass().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -327,6 +382,8 @@ private static final long serialVersionUID = 0L;
       super.clear();
       name_ = "";
 
+      pass_ = "";
+
       return this;
     }
 
@@ -354,6 +411,7 @@ private static final long serialVersionUID = 0L;
     public io.grpc.examples.helloworld.HelloRequest buildPartial() {
       io.grpc.examples.helloworld.HelloRequest result = new io.grpc.examples.helloworld.HelloRequest(this);
       result.name_ = name_;
+      result.pass_ = pass_;
       onBuilt();
       return result;
     }
@@ -404,6 +462,10 @@ private static final long serialVersionUID = 0L;
       if (other == io.grpc.examples.helloworld.HelloRequest.getDefaultInstance()) return this;
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
+        onChanged();
+      }
+      if (!other.getPass().isEmpty()) {
+        pass_ = other.pass_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -507,6 +569,82 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       name_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object pass_ = "";
+    /**
+     * <code>string pass = 2;</code>
+     * @return The pass.
+     */
+    public java.lang.String getPass() {
+      java.lang.Object ref = pass_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        pass_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string pass = 2;</code>
+     * @return The bytes for pass.
+     */
+    public com.google.protobuf.ByteString
+        getPassBytes() {
+      java.lang.Object ref = pass_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        pass_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string pass = 2;</code>
+     * @param value The pass to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPass(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      pass_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string pass = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearPass() {
+      
+      pass_ = getDefaultInstance().getPass();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string pass = 2;</code>
+     * @param value The bytes for pass to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPassBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      pass_ = value;
       onChanged();
       return this;
     }

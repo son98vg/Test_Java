@@ -18,4 +18,16 @@ public interface HelloRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getNameBytes();
+
+  /**
+   * <code>string pass = 2;</code>
+   * @return The pass.
+   */
+  java.lang.String getPass();
+  /**
+   * <code>string pass = 2;</code>
+   * @return The bytes for pass.
+   */
+  com.google.protobuf.ByteString
+      getPassBytes();
 }

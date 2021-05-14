@@ -10,11 +10,17 @@ import helloworld_pb2_grpc
 class Greeter(helloworld_pb2_grpc.GreeterServicer):
 
     def SayHello(self, request, context):
-        print(request.name)
-        return helloworld_pb2.HelloReply(message='Hello, %s!' % request.name)
+        # print("request 1 -----", request)
+        return helloworld_pb2.HelloReply(message='Hello, %s!' % request)
     def SayHelloAgain(self, request, context):
-        print(request.name)
-        return helloworld_pb2.HelloReply(message='Hello again, %s!' % request.name)
+        # print("request 2 -----",request)
+        if (request.name == 'People'):
+            print('true')
+            return helloworld_pb2.HelloReply(message = request.name)
+        else:    
+        # response = helloworld_pb2.HelloReply(message='Hello again, %s!' % request)
+            print('false')
+            return helloworld_pb2.HelloReply(message=request.name)
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
